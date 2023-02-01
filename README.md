@@ -15,7 +15,7 @@ and
 ```
 desired_category = "My category name"
 ```
-level3_category_description is an element of a **<product>** entry. Selecting that and changing 'desired_category' string value __selects__ the product category. 
+level3_category_description is an element of a **```<product>```** entry. Selecting that and changing 'desired_category' string value __selects__ the product category. 
 
 So if you want to select another category, you do so by changing ```desired_category = "Smartphones"```
 
