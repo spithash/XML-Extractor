@@ -22,21 +22,22 @@ So if you want to select another category, you do so by changing ```desired_cate
 ### Sample product entry
 ```
 <entry>
-	<code>22301</code>
-	<PerItemBarCode>22929</PerItemBarCode>
-	<MUCode>ΤΕΜ</MUCode>
+  <code>22301</code>
+  <PerItemBarCode>22929</PerItemBarCode>
+  <MUCode>ΤΕΜ</MUCode>
   <name>Product Name</name>
-	<description>Product Description</description>
-	<image>https://example.com/photos/e7207152345c.jpg</image>
-	<level3_category_description>Smartphones</level3_category_description>
-	<pricing_category>147-2</pricing_category>
-	<quantity_mode_value>10</quantity_mode_value>
-	<availability>out of stock</availability>
-	<price>2.52</price>
-	<recommended_retail_price_with_vat>2.03</recommended_retail_price_with_vat>
-	<recommended_retail_price_no_vat>1.64</recommended_retail_price_no_vat>
-	</entry>
+  <description>Product Description</description>
+  <image>https://example.com/photos/e7207152345c.jpg</image>
+  <level3_category_description>Smartphones</level3_category_description>
+  <pricing_category>147-2</pricing_category>
+  <quantity_mode_value>10</quantity_mode_value>
+  <availability>out of stock</availability>
+  <price>2.52</price>
+  <recommended_retail_price_with_vat>2.03</recommended_retail_price_with_vat>
+  <recommended_retail_price_no_vat>1.64</recommended_retail_price_no_vat>
+</entry>
 ```
+
 ### OUTPUT
 The script will output matching products (or rather entries) in an XML file called **output.xml**.
 
