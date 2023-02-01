@@ -1,5 +1,5 @@
 # XML-Extractor
-An XML extractor for products matching specific elements using regular expressions written in Python.
+An XML extractor for products matching specific elements using regular expressions written in Python. There's a progress bar too while fetching the XML.
 
 ## WHY?
 I personally use this script to extract (match) products matching certain categories from an XML url containing thousands of products and get only the ones I want, the ones I select and output it in another file.
