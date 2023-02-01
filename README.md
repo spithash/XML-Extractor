@@ -37,7 +37,6 @@ So if you want to select another category, you do so by changing ```desired_cate
 	<recommended_retail_price_no_vat>1.64</recommended_retail_price_no_vat>
 	</entry>
 ```
-
 ### OUTPUT
 The script will output matching products (or rather entries) in an XML file called **output.xml**.
 
