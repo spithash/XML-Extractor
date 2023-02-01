@@ -7,9 +7,9 @@ I personally use this script to extract (match) products matching certain catego
 Use it to create custom (category specific) XMLs and import the products of 'output.xml' in WpAllImport.
 
 ## USAGE
-Select an element (change it to match yours) like __<level3_category_description>__ for example and match products belonging to that category, editing the variable value of 'desired_category' in the lines below:
+Change selector value: Select an element (change it to match yours) like __<level3_category_description>__ for example and match products belonging to that category, editing the variable value of 'desired_category' in the lines below:
 ```
-if "<level3_category_description>" + desired_category + "</level3_category_description>" in entry:
+selector = "<level3_category_description>" + desired_category + "</level3_category_description>"
 ```
 and
 ```
