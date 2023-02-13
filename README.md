@@ -18,7 +18,7 @@ desired_category = re.compile("My category name.*")
 ```
 level3_category_description is an element of a **```<product>```** entry. Selecting that and changing ```desired_category``` string value (which also supports regex) __selects__ the product category. 
 
-So if you want to select another category, you do so by changing ```desired_category = re.compile("Smartphones.*")```
+So if you want to select another category, you do so by changing ```desired_category = re.compile("Smartphones.*")``` to match your selection.
 
 You should also change the ```output_file_name``` variable to the name of your output file because the old file will get overwritten.
 
