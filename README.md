@@ -14,7 +14,7 @@ selectorsuffix = "</level3_category_description>"
 ```
 and
 ```
-desired_category = "My category name"
+desired_category = re.compile("My category name.*")
 ```
 level3_category_description is an element of a **```<product>```** entry. Selecting that and changing ```desired_category``` string value (which also supports regex) __selects__ the product category. 
 
