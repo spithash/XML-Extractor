@@ -19,11 +19,14 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Ge
 url = "https://www.example.com/productsxml/"
 
 # Set the category name
-desired_category = re.compile("Προϊόντα /Διακοπτικό Υλικό /.*")
+desired_category = re.compile("My category name.*")
 
 # Set element prefix and suffix
 selectorprefix = "<level3_category_description>"
 selectorsuffix = "</level3_category_description>"
+
+# Set the output file name
+output_file_name = "output.xml"
 
 print("Fetching XML data...\n")
 
@@ -54,14 +57,14 @@ matching_entries = []
 
 # Search for desired element in each entry
 for i, entry in enumerate(entries):
-    if re.search(desired_category, entry):
+    if re.search(desired_category, entry) and selectorprefix in entry and selectorsuffix in entry:
         found_product_count += 1
         matching_entries.append(entry)
     progress_bar(i + 1, product_count, prefix = 'Loading:', suffix = 'Complete', length = 50)
     time.sleep(0.001)
 
 # Write the matching entries into the output.xml file
-with open("output.xml", "w", encoding="UTF-8") as f:
+with open(output_file_name, "w", encoding="UTF-8") as f:
     f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
     f.write("<product_results>\n")
     for entry in matching_entries:
@@ -70,4 +73,5 @@ with open("output.xml", "w", encoding="UTF-8") as f:
 
 print("\033[1mNumber of products in the XML:\033[0m", product_count)
 print("\033[36mNumber of found products:\033[0m", found_product_count)
+print("\033[32mOutput written to file: " + output_file_name + "\033[0m")
 
